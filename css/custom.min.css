@@ -120,53 +120,266 @@ html.lenis body {
 }
 
 /* HEADER */
-.header {
-	padding: 1rem 0;
-	transition: 0.3s ease-in-out;
+
+.container-fluid {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-.header-main__logo {
-	width: 180px;
+header .header_btn {
+    color: var(--primary);
+    background: #fff;
+    box-shadow: 8px 8px 20px 0px rgba(0, 139, 153, 0.3);
+    -webkit-box-shadow: 8px 8px 20px 0px rgba(0, 139, 153, 0.3);
+    -moz-box-shadow: 8px 8px 20px 0px rgba(0, 139, 153, 0.3);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    font-size: 16px;
+    padding: 16px 28px 16px 28px;
+    line-height: 1;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    position: relative;
+    border: 1px solid;
 }
 
-.header-main__logo>img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+header .header_btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 1;
+    -webkit-transform: translate(-105%, 0);
+    transform: translate(-105%, 0);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-.header-main__nav li a {
-	color: var(--white);
-	font-size: 1rem;
-	font-weight: 500;
-	padding: 0.35rem 0.25rem;
-	margin: 0 1rem;
-	text-transform: capitalize;
-	position: relative;
+header .header_btn:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 139, 153, 0.3);
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 139, 153, 0.3);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 139, 153, 0.3);
 }
 
-.header-main__nav li a::after {
-	content: "";
-	width: 0;
-	height: 2px;
-	background-color: var(--primary);
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	transition: all 300ms ease-in-out;
+header .header_btn:hover:before {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
 
-.header-main__nav li a:hover::after,
-.header-main__nav li a.active::after {
-	width: 100%;
-	right: auto;
-	left: 0;
+:is(.heading) .char {
+    display: inline !important;
 }
+
+
+
+.logo {
+    max-width: 200px;
+}
+
+
+.dropdown-menu.show {
+    z-index: 1021;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+/*--------------------------------------
+  1. General Navigation Structure
+---------------------------------------*/
+.main-header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 rgba(42, 67, 113, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+	padding: 15px 0;
+}
+
+.navbar .dropdown-menu {
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    background: var(--white);
+}
+
+/*--------------------------------------
+    2. Dropdown Styles
+  ---------------------------------------*/
+.nav-item .dropdown-toggle .fa-chevron-down {
+    transition: transform 0.3s ease;
+    font-size: 15px;
+}
+
+.nav-item.dropdown:hover .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.navbar .dropdown:hover .dropdown-menu li {
+    display: block;
+    position: relative;
+    padding: 5px 40px;
+}
+
+.navbar .dropdown:hover .dropdown-menu a.dropdown-item {
+    color: var(--black);
+    background: var(--white);
+    position: relative;
+    padding-left: 0;
+}
+
+.navbar .dropdown:hover .dropdown-menu a.dropdown-item:hover {
+    color: var(--primary);
+    padding-left: 15px;
+}
+
+.navbar .dropdown:hover .dropdown-menu a.dropdown-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00c3ff;
+    transform: translateY(-50%);
+    transition: all 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navbar .dropdown:hover .dropdown-menu a.dropdown-item:hover::before {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*--------------------------------------
+    3. Nav Link Styles
+  ---------------------------------------*/
+.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    margin-right: 20px;
+    position: relative;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--white);
+}
+
+/* Sticky header overrides */
+.sticky-header .nav-link {
+    color: var(--black);
+}
+
+.sticky-header .navbar-nav .nav-link.active,
+.sticky-header .navbar-nav .nav-link.show,
+.sticky-header .nav-link:focus,
+.sticky-header .nav-link:hover {
+    color: var(--black);
+}
+
+/*--------------------------------------
+    4. Underline Animation for nav-link
+  ---------------------------------------*/
+.main-header .nav-link::before,
+.main-header .nav-link::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0%;
+    bottom: -3px;
+    background: #00c3ff;
+    display: block;
+    transition: all 0.3s linear;
+    border: none;
+    border-radius: 0;
+}
+
+.nav-link::before {
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav-link::after {
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.nav-link:hover::before,
+.navbar-nav .nav-link.active::before,
+.navbar-nav .nav-link.show::before {
+    left: 50%;
+    width: 50%;
+}
+
+.nav-link:hover::after,
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link.show::after {
+    right: 50%;
+    width: 50%;
+}
+
+/*--------------------------------------
+    5. Sticky Header
+  ---------------------------------------*/
+header.main-header.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 4px 4px 30px rgba(42, 67, 113, 0.15);
+    backdrop-filter: blur(20px) saturate(180%);
+    animation: stickySlideDown 0.5s ease-out both;
+}
+
+/*--------------------------------------
+    6. Keyframes
+  ---------------------------------------*/
+@keyframes stickySlideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 
 /* BANNER */
 .hero_section {
 	width: 100%;
-	height: 670px;
+	height: 750px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -334,3 +547,126 @@ html.lenis body {
     font-size: 15px;
     margin: 0;
 }
+
+
+
+/* Product Cards */
+
+.product_card {
+    box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+    margin: 0 12px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.product_card_labels {
+    top: 22px;
+    right: 22px;
+	z-index: 1;
+}
+
+.detail_card_labels .promo_label, .detail_card_labels li, .product_card_labels .promo_label, .product_card_labels li {
+    padding: 2px 10px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px 0 #d8e1ea;
+    text-align: center
+}
+
+.detail_card_labels .featured_label, .detail_card_labels .featured_label i, .detail_card_labels .promo_label, .detail_card_labels .promo_label i, .product_card_labels .featured_label, .product_card_labels .featured_label i, .product_card_labels .promo_label, .product_card_labels .promo_label i {
+    font-size: 13px;
+    color: #e35e5d
+}
+
+.detail_card_labels .stock_label, .product_card_labels .stock_label {
+    background-color: #7fd897
+}
+
+.detail_card_labels .stock_label, .detail_card_labels .stock_label i, .product_card_labels .stock_label, .product_card_labels .stock_label i {
+    font-size: 13px;
+    color: #fff
+}
+
+.product_card_title h5 {
+    color: var(--secondary);
+    font-weight: 700
+}
+
+.product_card_title {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    min-height: 81px;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative
+}
+
+.product_card img {
+    height: 220px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.poduct_card_title:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 4px;
+    height: calc(100% - 15px);
+    background: #d1d1d1;
+    border-radius: 2px
+}
+
+.phone_icon, .wa_icon {
+    background-color: var(--secondary);
+    height: 36px;
+    width: 36px;
+    border-radius: 30px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center
+}
+
+.wa_icon {
+    background-color: #57bb63 !important
+}
+
+.product_card_price div {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px 0 #e1e1e1;
+    margin: 0;
+    border-radius: 6px;
+    padding: 5px 10px;
+    width: fit-content
+}
+
+.product_card_price .price_cut {
+    text-decoration-line: line-through;
+    font-size: 13px
+}
+
+.product_card_image {
+    position: relative;
+    display: block;
+	width: 100%;
+    height: 250px;
+    align-content: end;
+}
+
+.product_card_image::before {
+    content: "";
+    background: url(https://driftcarrental.com/public/front_assets/images/logo/water-mark.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Product Cards */

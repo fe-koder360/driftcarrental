@@ -385,49 +385,6 @@ include 'include/header.php' ?>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product_card position-relative p-3">
-                        <ul class="product_card_labels list-unstyled d-flex gap-2 position-absolute flex-wrap">
-                            <li class="promo_label text-dark">PROMO</li>
-                            <li class="stock_label"><i class="fa-solid fa-check"></i> IN STOCK</li>
-                        </ul>
-                        <a href="https://driftcarrental.com/our-fleet/Jetour%20T2%202024%20-iid-80"
-                            class="product_card_image" title="Jaguar T2 2024">
-                            <img class="w-100" src="https://driftcarrental.com/public/feature_image/1749574446.webp"
-                                alt="car image" />
-                        </a>
-                        <div class="product_card_title d-flex justify-content-between align-items-center">
-                            <div class="ms-3">
-                                <h5>Jaguar T2 2024</h5>
-                                <p class="text-secondary m-0">T2, 2024</p>
-                            </div>
-
-
-                            <div class="d-flex align-items-center gap-2 border-start">
-                                <a href="https://api.whatsapp.com/send?phone=+971561947465&text=I+visited+your+website+and+I+am+interested+in+%3A+Jaguar+T2+%282024%29%0A+https%3A%2F%2Fwww.driftcarrental.com%2Four-fleet%2FJetour+T2+2024+-iid-80"
-                                    target="_blank"><i class="fa-brands fa-whatsapp text-light fs-5 wa_icon"
-                                        data-id="80"></i></a>
-                                <a href="tel:971561947465"><i class="fa-solid fa-phone text-light fs-6 phone_icon"
-                                        data-id="80"></i></a>
-                            </div>
-                        </div>
-                        <div class="product_card_price d-flex gap-3 justify-content-center">
-                            <div>
-                                <p class="m-0 day">Per Day</p>
-                                <p class="m-0 text-success price_orig">AED 500</p>
-                            </div>                            
-                            <div>
-                                <p class="m-0 day">Per Month</p>
-                                <p class="m-0 text-success price_orig">AED 9000</p>
-                            </div>
-                        </div>
-                        <div class="product_card_btn mt-3">
-                            <button class="theme_btn1 w-100 sendEnquiry" data-id="80" data-bs-target="#sendEnquiry"
-                                data-bs-toggle="modal">Send Enquiry
-                            </button>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
