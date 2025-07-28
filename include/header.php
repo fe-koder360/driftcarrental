@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title><?php echo isset($title) ? $title : 'Home';  ?></title>
+    <title><?php echo isset($title) ? $title : 'Affordable Car Rental Dubai, UAE | Best Deals on Rental Cars';  ?></title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,7 @@
             </button>
             <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <img src="images/logo.png" alt="Filingzone" class="logo">
+                    <img src="images/logo-blue.png" alt="Filingzone" class="logo">
                     <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>

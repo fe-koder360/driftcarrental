@@ -101,14 +101,23 @@ html.lenis body {
 	display: block;
 	background-color: var(--primary);
 	color: var(--white);
-	font-size: 1rem;
-	font-weight: 500;
+	font-size: 0.875rem;
+	font-weight: 700;
 	text-transform: capitalize;
-	padding: 0.75rem 2.25rem;
+	padding: 0.5rem 1rem;
+    border-radius: 40px;
+    border: 1px solid var(--primary);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 .themeBtn:hover {
-	transform: translateY(-10px);
+    background-color: transparent;
+	color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 /* Heading */
@@ -261,7 +270,7 @@ a:hover {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #00c3ff;
+    background-color: var(--primary);
     transform: translateY(-50%);
     transition: all 0.2s linear;
     visibility: hidden;
@@ -314,7 +323,7 @@ a:hover {
     height: 5px;
     width: 0%;
     bottom: -3px;
-    background: #00c3ff;
+    background: var(--primary);
     display: block;
     transition: all 0.3s linear;
     border: none;
@@ -356,7 +365,7 @@ header.main-header.sticky-header {
     left: 0;
     right: 0;
     z-index: 99;
-    background-color: #fff;
+    background-color: var(--white);
     box-shadow: 4px 4px 30px rgba(42, 67, 113, 0.15);
     backdrop-filter: blur(20px) saturate(180%);
     animation: stickySlideDown 0.5s ease-out both;
@@ -590,7 +599,9 @@ header.main-header.sticky-header {
 
 .product_card_title h5 {
     color: var(--secondary);
-    font-weight: 700
+    font-weight: 700;
+    min-height: 60px;
+    margin-top: 1rem;
 }
 
 .product_card_title {
@@ -669,4 +680,312 @@ header.main-header.sticky-header {
     pointer-events: none;
 }
 
-/* Product Cards */
+.product_slider .slick-dots li button:before {
+    font-size: 15px;
+    color: #ccc;
+}
+.product_slider .slick-dots li.slick-active button:before {
+    color: #72abff;
+}
+
+/* Product Cards End */
+
+/* Documents Section */
+.documents_sec{
+    padding: 4rem 0;    
+}
+.document_card {
+    padding: 30px 25px;
+    background: #eef2f9;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px 0 #72abffa1;
+    height: 100%;
+}
+
+/* Documents Section End */
+
+/* Rental Process */
+.rental_section{
+    padding: 4rem 0;
+    counter-reset: counter;
+    background: url(https://driftcarrental.com/public/front_assets/images/home/line.png) 100%;
+}
+
+.rental_section .row {
+    counter-increment: counter;
+    position: sticky;
+    top: 10%;
+    background: #ffffff;
+}
+
+.rental_section .row::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 80%;
+    background: rgb(74 143 251);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+}
+
+.rental_section .row::after {
+    content: counter(counter); /* Correct usage */
+    position: absolute;
+    width: 50px;
+    aspect-ratio: 1;
+    background: #ffffff1f;
+    border: 2px solid #72abff;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(4px);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+/* Rental Process End */
+
+/* Choose Rental Service */
+
+
+.choose_section {
+    background: url(https://driftcarrental.com/public/front_assets/images/home/plain-background.jpg) no-repeat center / cover;
+}
+.why_choose_card .box_shadow:hover {
+    background: #e1e1e1 !important;
+}
+
+.why_choose_card .box_shadow {
+    background: transparent;
+    transition: all 0.5s ease;
+}
+
+.why_choose_card .box_shadow img {
+    mix-blend-mode: darken;
+}
+/* Choose Rental Service End */
+
+
+/* Our Rental Package */
+
+.service_card {
+    background: transparent;
+    transition: all 0.5s ease;
+    position: relative;
+    border-radius: .375rem;
+    overflow: hidden;
+}
+
+.service_card :is(h4, p){
+    transition: all 0.5s ease;
+    color: #fff;
+}
+
+.service_card:hover::before {
+    backdrop-filter: blur(8px);
+}
+
+.service_card:hover :is(h4, p) {
+    color: #fff;
+}
+
+.service_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .375rem;
+}
+
+.service_card_content {
+    position: absolute;
+    padding: 1.5em;
+    bottom: -30%;
+    transition: all 0.5s ease;
+}
+
+.service_card::before {
+    content: "";
+    background: #00000070;
+    position: absolute;
+    inset: 0;
+    transition: all 0.5s ease;
+}
+
+.service_card_img {
+    margin: 0;
+}
+
+.service_card:hover .service_card_content {
+    bottom: 0;
+}
+
+/* Our Rental Pkg End */
+
+
+/* FAQ  */
+.faq_section .accordion {
+    margin-top: 2rem;
+}
+
+.faq_section .accordion-item {
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: .375rem;
+    overflow: hidden;
+    background: #eef2f9;
+}
+
+.faq_section .accordion-header .accordion-button {
+    background: #eef2f9;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.faq_section .accordion-header .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.faq_section .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #4990f9;
+}
+
+.faq_section .accordion-body {
+    background: transparent;
+}
+
+.faq_section .accordion-body p {
+    margin: 0;
+}
+
+/* FAQ End */
+
+/* Blogs */
+
+.blog_card {
+    min-height: 480px;
+    border-radius: .375rem;
+    box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+}
+.blog_card h5, .text_theme {
+    color: var(--primary);
+}
+.blog_card a,
+.blog_card img{
+    width: 100%; 
+}
+.blog_card img{
+    height: 300px;
+    object-fit: cover;
+}
+.blog_card h5{
+    min-height: 50px;
+}
+
+.blog_card p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Blogs End */
+
+/* Testimonials */
+.testimonial_slider {
+    padding: 2rem 0 3rem;
+}
+.testimonial_slider .slick-dots li button:before {
+    font-size: 15px;
+    color: #72abff;
+}
+.testimonial_slider .slick-dots li.slick-active button:before {
+    color: #72abff;
+}
+.testimonial_card {
+    min-height: 285px
+}
+.testimonial_slider .slick-slide{
+    margin: 0 20px;
+}
+
+/* Testimonials End */
+
+
+/* Footer */
+
+.footer {
+    background: rgb(73 144 249);
+    padding: 2rem 0;
+    color:var(--white);
+}
+
+.footer .quickList h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer .quickList ul,
+.footer .calFoter ul {
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+
+.footer .quickList ul>li a,
+.footer .calFoter ul>li a {
+    color: #ffffffba;
+    font-weight: 600;
+}
+
+.footer .quickList ul>li a:hover,
+.footer .calFoter ul>li a:hover {
+    color: var(--white);
+}
+.footer .quickList .footer_working_hours {
+    line-height: 2;
+    font-size: 0.9rem;
+    padding-left: 20px;
+}
+
+.footer .quickList .footer_working_hours li {
+    list-style: circle;
+}
+
+.quickList ul>li img {
+    max-height: 38px;
+    margin: 10px 0;
+}
+.quickList ul>li img {
+    max-height: 38px;
+    margin: 10px 0;
+}
+
+.footer_social_links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer_social_links li a {
+    color: #ffffffba;
+    font-size: 1.5rem;
+}
+.copyRight {
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid;
+}
+/* Footer End */

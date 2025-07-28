@@ -2,28 +2,35 @@
     <footer class="footer">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-md-4">
-                    <a href="#" class="footerLogo"><img src="images/footerlogo.png" class="img-fluid" alt="img"></a>
+                <div class="col-md-3 me-md-auto">
+                    <a href="#" class="footerLogo"><img src="images/logo-white.png" class="img-fluid" alt="img"></a>
+                    <p class="mt-4">
+                       <em>Shop no. 18, Al Raha Building, Opposite City Max Hotel Behind Mall Of Emirates, Al Barsha 1, Dubai P.O. Box: 88152 – Dubai – UAE </em>
+                    </p>
                 </div>
                 <div class="col-md-2">
                     <div class="quickList">
                         <h2>QUICK LINKS</h2>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Business Solutions</a></li>
-                            <li><a href="#">Industries News</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Rent a Car in Dubai</a></li>
+                            <li><a href="#">Rent SUV in Dubai</a></li>
+                            <li><a href="#">Rent Sedan in Dubai</a></li>
+                            <li><a href="#">Rent Crossover in Dubai</a></li>
+                            <li><a href="#">Luxury Car Rental Dubai</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="quickList">
-                        <h2>Other LINKS</h2>
-                        <ul>
-                            <li><a href="#">For Retailer</a></li>
-                            <li><a href="#">For BrandsPrivacy Policy</a></li>
-                            <li><a href="#">Cookies Policy</a></li>
+                        <h2>Working Hours</h2>
+                        <ul class="footer_working_hours">
+                            <li><a href="#">Monday: 8:30 am - 8:30 pm</a></li>
+                            <li><a href="#">Tuesday: 8:30 am - 8:30 pm</a></li>
+                            <li><a href="#">Wednesday: 8:30 am - 8:30 pm</a></li>
+                            <li><a href="#">Thursday: 8:30 am - 8:30 pm</a></li>
+                            <li><a href="#">Friday: 8:30 am - 8:30 pm</a></li>
+                            <li><a href="#">Saturday: 8:30 am - 8:30 pm</a></li>
+                            <li><a href="#"><strong>Sunday: 10:00 am - 8:30 pm</strong></a></li>
                         </ul>
                     </div>
                 </div>
@@ -33,23 +40,53 @@
                     </div>
                     <div class="calFoter">
                         <ul>
-                            <li><strong>Phone:</strong> <a href="tel:1234567890">(123) 456 7890</a></li>
-                            <li><strong>Email:</strong> <a href="mailto:info@americanmade.com">info@americanmade.com</a>
+                            <li><strong>Phone:</strong> <a href="tel:+971561947465">+971 561 947 465</a></li>
+                            <!-- <li><strong>Email:</strong> <a href="mailto:info@americanmade.com">info@americanmade.com</a> -->
                             </li>
-                            <li><strong>Location:</strong> <span>Narraburra, 4096
-                                    Stonehenge Rd, Kooroongarra
-                                    QLD 4357, USA</span></li>
+                            <li><strong>Location:</strong> 
+                                <span>
+                                    Shop # 3, Ajyal Building, <br>
+                                    Al  Barsha 1, Dubai
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="quickList">
+                        <h2>Certificates</h2>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="https://driftcarrental.com/public/front_assets/images/home/footer-docs.webp" class="img-fluid">
+                                </a>
+                            </li>
+                            <li>
+                                <p>
+                                    Quality Management System ISO 9001:2008
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#" class="btn_flex">
+                                    <img src="https://driftcarrental.com/public/front_assets/images/icons/visa.webp" alt="" class="img-fluid">
+                                    <img src="https://driftcarrental.com/public/front_assets/images/icons/visa-verified.webp" alt="" class="img-fluid">
+                                    <img src="https://driftcarrental.com/public/front_assets/images/icons/master-card.webp" alt="" class="img-fluid">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://driftcarrental.com/public/front_assets/images/icons/master-card-secure.webp" alt="" class="img-fluid">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row copyRight">
                 <div class="col-md-6">
-                    <p>Copyright © 2022 All Right Reserved </p>
+                    <p>Copyright © 2025 All Right Reserved </p>
                 </div>
                 <div class="col-md-6">
-                    <ul>
-                        <li><span>Follow Us:</span></li>
+                    <ul class="footer_social_links">
+                        <!-- <li><span>Follow Us:</span></li> -->
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -59,16 +96,6 @@
             </div>
         </div>
     </footer>    
-    <!-- searchBtn -->
-    <div class="searchPopup" id="searchBtn">
-        <button class="close" type="button">×</button>
-        <form>
-            <input placeholder="SEARCH" type="search" value="">
-            <div class="srch-btn">
-                <a href="#" class="themeBtn">Search</a>
-            </div>
-        </form>
-    </div>
     
     <?php include 'include/js.php'; ?>
 
