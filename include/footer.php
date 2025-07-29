@@ -2,13 +2,13 @@
     <footer class="footer">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-md-3 me-md-auto">
+                <div class="col-md-3">
                     <a href="#" class="footerLogo"><img src="images/logo-white.png" class="img-fluid" alt="img"></a>
-                    <p class="mt-4">
+                    <p class="mt-4 pe-3">
                        <em>Shop no. 18, Al Raha Building, Opposite City Max Hotel Behind Mall Of Emirates, Al Barsha 1, Dubai P.O. Box: 88152 – Dubai – UAE </em>
                     </p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <div class="quickList">
                         <h2>QUICK LINKS</h2>
                         <ul>
@@ -51,7 +51,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="quickList">
+                    <div class="quickList mt-4">
                         <h2>Certificates</h2>
                         <ul>
                             <li>
@@ -69,11 +69,8 @@
                                     <img src="https://driftcarrental.com/public/front_assets/images/icons/visa.webp" alt="" class="img-fluid">
                                     <img src="https://driftcarrental.com/public/front_assets/images/icons/visa-verified.webp" alt="" class="img-fluid">
                                     <img src="https://driftcarrental.com/public/front_assets/images/icons/master-card.webp" alt="" class="img-fluid">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
                                     <img src="https://driftcarrental.com/public/front_assets/images/icons/master-card-secure.webp" alt="" class="img-fluid">
+                                
                                 </a>
                             </li>
                         </ul>

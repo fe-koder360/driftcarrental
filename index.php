@@ -38,7 +38,7 @@ include 'include/header.php' ?>
                     <div class="row align-items-center">
                         <div class="col-md-5">
                             <div class="d-flex hero_heading_div hero_heading_div_new flex-column pt-5">
-                                <h1 class="text-light">
+                                <h1>
                                     Top Sports Car Rentals in Dubai
                                 </h1>
                                 <p class="h4 text-light">
@@ -63,7 +63,7 @@ include 'include/header.php' ?>
                     <div class="row align-items-center">
                         <div class="col-md-5">
                             <div class="d-flex hero_heading_div hero_heading_div_new flex-column pt-5">
-                                <h1 class="text-light">
+                                <h1>
                                     Affordable Car Rentals in Dubai
                                 </h1>
                                 <p class="h4 text-light">
@@ -401,9 +401,9 @@ include 'include/header.php' ?>
 <!-- Documents Section Start -->
 <section class="bg_light_blue documents_sec">
     <div class="container">
-        <h3 class="text-center fw-bold">
+        <h2 class="secHeading text-center">
             Essential Documents for <br> Renting a Car
-        </h3>
+        </h2>
         <p class="text-center">
             The required documentation for car rental may differ based on whether you're a resident or a tourist.
             <br>
@@ -462,7 +462,7 @@ include 'include/header.php' ?>
 
 <section class="rental_section py-5">
     <div class="container">
-        <h2 class="fw-bold text-center">Our Car Rental Booking Process</h2>
+        <h2 class="secHeading text-center">Our Car Rental Booking Process</h2>
         <div class="row align-items-center justify-content-between">
             <div class="col-md-5">
                 <div>
@@ -478,7 +478,7 @@ include 'include/header.php' ?>
             <div class="col-md-5">
                 <figure class="rental_image">
                     <img class="d-block mx-auto w-100"
-                        src="https://driftcarrental.com/public/front_assets/images/home/car-post.png"
+                        src="https://driftcarrental.com/public/feature_image/1718894232.webp"
                         alt="process-step" />
                 </figure>
             </div>
@@ -515,7 +515,7 @@ include 'include/header.php' ?>
             <div class="col-md-5">
                 <figure class="rental_image">
                     <img class="d-block mx-auto w-100"
-                        src="https://driftcarrental.com/public/front_assets/images/home/car-post-3.png"
+                        src="https://driftcarrental.com/public/feature_image/1725371581.webp"
                         alt="process-step" />
                 </figure>
             </div>
@@ -849,7 +849,7 @@ include 'include/header.php' ?>
             <h2 class="fw-bold">Blogs</h2>
             <div>
                 <a href="https://driftcarrental.com/blogs">
-                    <button class="theme_btn2">All Posts</button>
+                    <button class="btn themeBtn mt-2">All Posts</button>
                 </a>
             </div>
         </div>
@@ -865,7 +865,7 @@ include 'include/header.php' ?>
                             Once you have finalized on a car, send us an inquiry and we’ll complete the booking process. Our online payment transactions are safe and secure. O...
                         </p>
                         <a href="https://driftcarrental.com/blog/personal-leasing">
-                            <button class="btn themeBtn mt-2">Read More</button>
+                            <button class="btn themeBtn mt-2 w-100">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -882,7 +882,7 @@ include 'include/header.php' ?>
                             Are you looking for a dependable pair of wheels for your travels, or are you organizing a road trip or weekend getaway? Drift Rent a Car is your re...
                         </p>
                         <a href="https://driftcarrental.com/blog/lease-to-own">
-                            <button class="btn themeBtn mt-2">Read More</button>
+                            <button class="btn themeBtn mt-2 w-100">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -899,7 +899,7 @@ include 'include/header.php' ?>
                             Are you looking for a dependable pair of wheels for your travels, or are you organizing a road trip or weekend getaway? Drift Rent a Car is your re...
                         </p>
                         <a href="https://driftcarrental.com/blog/drift-car-rentals-your-complete-guide-to-car-rentals-will-help-you-unlock-your-adventure">
-                            <button class="btn themeBtn mt-2">Read More</button>
+                            <button class="btn themeBtn mt-2 w-100">Read More</button>
                         </a>
                     </div>
                 </div>

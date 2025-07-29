@@ -130,10 +130,7 @@ html.lenis body {
 
 /* HEADER */
 
-.container-fluid {
-    padding-left: 100px;
-    padding-right: 100px;
-}
+
 
 header .header_btn {
     color: var(--primary);
@@ -825,7 +822,9 @@ header.main-header.sticky-header {
 .service_card:hover .service_card_content {
     bottom: 0;
 }
-
+.product_section .themeBtn {
+    MARGIN: 0 auto;
+}
 /* Our Rental Pkg End */
 
 
@@ -989,3 +988,132 @@ header.main-header.sticky-header {
     border-top: 1px solid;
 }
 /* Footer End */
+
+
+
+/* Our Fleet */
+.page_banner {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    padding: 40px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.page_banner:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgb(0 0 0 / 60%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.page_banner.our_fleet{
+    background-image: url('../images/our_fleet_bg.webp');
+}
+
+.page_banner h1 {
+    position: relative;
+    font-size: 4rem;
+    line-height: 1.125;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.our_fleet_sec {
+    padding: 4rem 0;
+}
+.flex_filter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex_filter .form-select {
+    flex-basis: 200px;
+}
+
+.filter_body {
+    color: #4d4d4d;
+    font-size: 1.25rem;
+    font-weight: 400;
+    border-bottom: 1px solid var(--primary);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.filter_body h4 {
+    font-size: 17px;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.filter_body .form-check input[type="checkbox"] {
+    border: 1px solid #ccc;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    transition: .3s all ease;
+}
+
+.filter_body .form-check {
+    margin-bottom: 10px;
+}
+
+.filter_body .form-check:hover input[type="checkbox"] {
+    border: 1px solid var(--primary);
+}
+
+.filter_body .form-check label {
+    cursor: pointer;
+}
+
+.price_range-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price_range-flex label {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.price_range-flex input::-webkit-outer-spin-button,
+.price_range-flex input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+.price_range-flex input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.filter_footer {
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    border-top: 1px solid #80808061;
+}
+
+.filter_footer .themeBtn {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+/* Our Fleet End */

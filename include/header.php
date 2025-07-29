@@ -20,12 +20,12 @@
 
     <!-- HEADER -->
     <header class="main-header">
-    <nav class="navbar sticky-top navbar-expand-xl navbar-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a href="/" class="navbar-brand">
                 <img src="images/logo-white.png" alt="Voice Your Business Logo" class="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
                 aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,6 +44,7 @@
                                 <i class="fa fa-chevron-down ms-1" id="dropdownIcon"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="our-fleet.php">Show All</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">SUV</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Compact</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Crossover</a></li>
