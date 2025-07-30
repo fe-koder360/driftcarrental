@@ -138,6 +138,19 @@
         gap: 10px;
         text-align: center;
     }
+    .car_card_gallery{
+        height: fit-content;
+    }
+    .car_card_content{
+        padding: 2rem;
+    }
+    .card_images_box img{
+        border-radius: 10px 10px 0 0;
+    }
+    .page_banner{
+        height: 300px;
+        text-align: center;
+    }
 }
 @media (max-width: 767.98px) {
 	html {
